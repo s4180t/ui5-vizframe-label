@@ -89,7 +89,8 @@ sap.ui.define([
                     dataLabel: {
                         formatString:formatPattern.SHORTFLOAT_MFD2,
                         renderer: function (oLabel) {
-                            if (oLabel.ctx.Week === "Week 47 - 52") {
+                            var aData = oVizFrame.getModel().getProperty("/milk");
+                            if (oLabel.ctx._context_row_number === aData.length -1) {
                                 oLabel.text = "";
                             }
                         },
