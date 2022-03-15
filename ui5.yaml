@@ -1,0 +1,4 @@
+specVersion: '2.6'
+metadata:
+  name: sap.viz.sample.line
+type: application
